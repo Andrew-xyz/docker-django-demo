@@ -1,10 +1,10 @@
 # Docker Django Demo
 
-Demo repository for a Django Docker implementation.
+Demo repository for a Django Docker implementation. Full Docker documentation is available [here](https://docs.docker.com/).
 
 ## Common Docker Commands
 
-Docker commands are used to manipulate images and containers on a one-to-one basis. These are often used for buil
+Docker commands are used to manipulate images and containers on a one-to-one basis. These are often used for building images and micro-managing networks at the container level.
 
 ```yaml
 $ docker ps                                            # Prints to console all running services
@@ -28,6 +28,8 @@ $ docker volume rm postgres                            # Removes the selected vo
 
 ## Common Docker Compose Commands
 
+Docker compose commands serve as an instruction set for how images and containers are run, applying tags and settings in a consistent way. This also provides a means for networking between containers.
+
 ```yaml
 $ docker compose up                                    # Starts the docker compose network, building or pulling images as needed
 $ docker compose up --build                            # Optional build switch to force image rebuilds from cache
@@ -38,6 +40,8 @@ $ docker compose down                                  # Brings the docker compo
 ```
 
 ## Common Docker Hub Commands
+
+Simple commands for interfacing with the DockerHub registry, available [here](https://hub.docker.com/).
 
 ```yaml
 $ docker login                                         # Logs the user in to a DockerHub account
