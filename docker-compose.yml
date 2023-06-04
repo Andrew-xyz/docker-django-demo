@@ -22,8 +22,10 @@ services:
     ports:
       - 25432:5432
     volumes:
-      - postgres:/var/lib/postgresql/data/ # Docker managed volume
-      # - /path/to/your/database:/var/lib/postgresql/data # User managed volume
+      # Docker managed volume
+      - postgres:/var/lib/postgresql/data/
+      # User managed volume
+      # - /path/to/your/database:/var/lib/postgresql/data
 
 volumes:
   postgres:
